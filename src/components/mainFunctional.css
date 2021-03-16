@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.App {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2%;
+}
+
+input {
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.countries {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+img {
+  width: 200px;
+}
+
+.userImg {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+.country {
+  width: 45%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: left;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  padding: 2px;
+  margin: 5px;
+}
+
+p {
+  padding: 3px;
+}
+
+button {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(204, 198, 198);
+}
+
+button:focus {
+  outline: none;
+}
+
+.user_content {
+  padding: 0 20px;
+  opacity: 0;
+  transition: all 0.5s;
+  height: 0;
+  margin: 0;
+  margin-top: -10px;
+  border: 1px solid #f1f1f1;
+  border-top: 0;
+  overflow: hidden;
+}
+
+.user_content.active {
+  height: auto;
+  opacity: 1;
+  padding: 20px;
+  overflow: auto;
+}
+
+a {
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: right;
+}
